@@ -1,0 +1,22 @@
+{
+  "name": "rng-mubc",
+  "version": "1.0.0",
+  "description": "RNG Ethereum Smart Contract Suite",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jp4g/RNG-MUBC.git"
+  },
+  "author": "Jack Gilcrest, Thomas Wright, Arthur Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jp4g/RNG-MUBC/issues"
+  },
+  "homepage": "https://github.com/jp4g/RNG-MUBC#readme"
+}
