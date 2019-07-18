@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/jp4g/RNG-MUBC/issues"
   },
-  "homepage": "https://github.com/jp4g/RNG-MUBC#readme"
+  "homepage": "https://github.com/jp4g/RNG-MUBC#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^8.0.0",
+    "truffle-hdwallet-provider": "^1.0.14"
+  }
 }
