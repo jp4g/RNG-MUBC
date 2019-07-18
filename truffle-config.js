@@ -9,30 +9,30 @@ const HDWalletProvider = require("truffle-hdwallet-provider");
 module.exports = {
   networks: {
     mainnet: {
-      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_MAINNET, 0, 100) },
+      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_MAINNET) },
       network_id: 1,
       confirmations: 2,
     },
     ropsten: {
-      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_ROPSTEN, 0, 100) },
+      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_ROPSTEN) },
       network_id: 3,
       confirmations: 2,
     },
     rinkeby: {
-      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_RINKEBY,  0, 100) },
+      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_RINKEBY) },
       network_id: 4,
       confirmations: 2,
     },
     kovan: {
-      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_KOVAN, 0, 100) },
+      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, process.env.API_KOVAN) },
       network_id: 42,
       confirmations: 2,
     },
     development: {
-      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:8545", 0, 100) },
+      provider: () => { return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:8545") },
       network_id: "*",
       gasLimit: 7000000
-    } 
+    }
   },
   mocha: {
     //timeout: 100000

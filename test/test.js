@@ -5,11 +5,9 @@
  */
 
 const RNGContract = artifacts.require("./RNG");
-require('chai').use(require('chai-as-promised')).should();
 
-contract("RNG Game", async (accounts) => {
+contract("RNG Game", async () => {
     let RNG;
-    let administrator = accounts[0];
     before(async () => {
         RNG = await RNGContract.deployed();
     });

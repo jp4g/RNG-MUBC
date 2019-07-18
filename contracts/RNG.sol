@@ -20,7 +20,6 @@ contract RNG {
         administrator = msg.sender;
     }
 
-
     /**
      * Generate a new random item and return it as a string
      * Uses constant arrays percentages and items
@@ -29,7 +28,7 @@ contract RNG {
     function drawItem() public view onlyAdministrator() returns (string memory item) {
         require(items.length == percentages.length, "Percentages array is not the same length as Items array!");
 
-        uint randomValue   = randomNumberGeneration();
+        uint randomValue = randomNumberGeneration();
         uint lowerBoundary = 0;
         for (uint i=0; i < percentages.length; i++) {
             if (randomValue >= lowerBoundary && randomValue < lowerBoundary + percentages[i])
